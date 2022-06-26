@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Calculate Your Maintenance Calories!
+        </title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+        crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+        crossorigin="anonymous"></script>
+        <script src="functions.js">
+        </script>
+        <link href="styling.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar justify-content-end navbar-expand-lg navbar-dark" style="background-color:#3F4E4F;">
+            <div class="title">
+            <a class="navbar-brand"><img src='icon.png'>&nbsp; MAINTENANCE CALORIE CALCULATOR</a>
+            </div>
+        </nav>
+        <div class="indt">
+            <br>
+        Gender:&nbsp; &nbsp;<input type="radio" name="gender" id='m' value="m"> Male &nbsp;&nbsp;
+        <input type="radio" name="gender" id="f" value="f"> Female<br>
+            <br>
+            Weight (in Kgs) : &nbsp;
+            <input type="number" step=".01" id="wght" class="rounded">      
+            <br><br>
+            Height (in cms): &nbsp;
+            <input type="number" step=".01" class="rounded" id="hght">
+            <br><br>
+            Age: &nbsp;
+            <input type="number" step="1" class="rounded" id="age">
+            <br><br>
+            <label for="phy-act">
+                Level of Physical Activity: &nbsp; 
+            </label>
+            <select name="phy-act" id="phy-act" class="rounded">
+                <option value="none" selected disabled hidden>
+                    Select &nbsp;From &nbsp;Below
+                </option>
+                <option value="1.55">
+                    Sedentary
+                </option>
+                <option value="1.85">
+                    Moderately Active
+                </option>
+                <option value="2.2">
+                    Vigorously Active
+                </option>
+                <option value="2.4">
+                    Extremely Active
+                </option>
+            </select>
+            <br>
+            <br>
+            <button type="button" class="btn" onclick="getval()">Calculate</button>
+        </div>
+        <br>
+        <div id="results">
+        </div>
+        <br>
+        
+        <br>
+        <br>
+        <div class="container-fluid">
+        <div class="row">
+        <div class="col-5 phyabt colored rounded">
+            The various physical activity groups can be classified as:
+            <ul>
+                <li>
+                    Sedentary<br>Sitting most of the day with no structured exercise 
+                </li>
+                <li>
+                    Moderately active<br>
+                    <ul>
+                        <li>Sedentary or low active job with 1 hr exercise daily</li>
+                        <li>
+                            Active job (moderate movement 8+ hrs per day) but no structured exercise 
+                        </li>
+                    </ul>
+                </li>
+            <li>
+                Vigorously active
+                <br>
+                <ul>
+                    <li>
+                        Active job (moderate movement 8+ hours per day) and 1 hr exercise per day 
+                    </li>
+                    <li>
+                        Sedentary or low active job but 2 hours of exercise daily 
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Extremely active
+                <ul>
+                    <li>
+                        Training more than 2 hrs per day
+                    </li>
+                    <li>
+                        Moderately active job (walking all day) plus at least 1 hr of exercise daily
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        </div>
+        <div class="col-2">
+        </div>
+    <div class="col-5 colored rounded">
+        Created according to the Mifflin St. Jeor equation
+        <br> <br>
+        Tips on maintaining a Diet using the Calculator:
+        <ul>
+            <li>
+                Maintaining: In-order to Maintain your weight it is recommended to follow the maintenance Calories
+            </li>
+            <li>
+                Bulking\Loading\Gaining: Inorder to put on weight, consume 250-500 calories more than your maintenance Calories
+            </li>
+            <li>
+                Cutting\Loosing: Inorder to loose weight, consume 250-500 calories less than your maintenance calories.
+            </li>
+        </ul>
+    </div>
+    </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap');
+body{
+    background-color: #dcd7c9;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.navbar-brand{
+    text-align: right;
+    color:#dcd7c9;  
+    font-size: xx-large;  
+}
+.indt{
+    text-align: center;
+}
+select,option{
+    font-family:'Plus Jakarta Sans', sans-serif;
+    background-color:#3F4E4F;
+    color:#dcd7c9;
+    border:none;
+    border-color: transparent;
+    transition: 1s;
+    width:30%;
+    text-align: center;
+}
+select:hover{
+    transition: 1s;
+    background-color: #dcd7c9;
+    color: #3F4E4F;
+    border:2px solid #3F4E4F;
+}
+input, input:hover, input:focus, input:active {
+    border: 0;
+    border-style: none;
+    border-color: transparent;
+    outline: none;
+    outline-offset: 0;
+    box-shadow: none;
+}
+
+.right{
+    text-align: right;
+}
+
+#results{
+    font-size: 150%;
+    text-align: center;
+}
+.btn{
+    transition: 1s;
+    background-color: #3F4E4F;
+    color: #dcd7c9;
+}
+.btn:hover{
+    transition: 1s;
+}
+.colored{
+    padding-top: 1%;
+    color:#dcd7c9;
+    background-color: #3F4E4F;
+}
